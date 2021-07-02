@@ -21,11 +21,11 @@ node {
         docker.build registryName
           }
           
-    //stage('Tagging') {
+    stage('Tagging') {
         sh "az acr login -n myakacrregistry --username myakacrregistry --password tlQv=XzxYOf/Ix8+tZj/Uj3lFelycVjG"
         sh " docker tag testimage myakacrregistry.azurecr.io/testimage:latest"
         //sh "sdo docker push myakacrregistry.azurecr.io/testimage:latest"
-         // }
+         }
 
     /* stage('AKS deploy'){
         sh 'sudo az aks install-cli'

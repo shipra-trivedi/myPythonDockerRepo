@@ -25,7 +25,7 @@ node {
         //sh "az acr login -n myakacrregistry --username myakacrregistry --password tlQv=XzxYOf/Ix8+tZj/Uj3lFelycVjG"
         //sh "sudo docker tag testimage myakacrregistry.azurecr.io/testimage:latest"
         //sh "sudo docker push myakacrregistry.azurecr.io/testimage:latest"
-          }
+         // }
 
     stage('AKS deploy'){
         sh 'sudo az aks install-cli'

@@ -28,7 +28,7 @@ node {
          }
 
     stage('AKS deploy'){
-        sh 'az aks install-cli'
+        //sh 'az aks install-cli'
         sh 'kubectl apply -f k8s-deployment.yaml'
 
     } 

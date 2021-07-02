@@ -23,6 +23,6 @@ node {
           
     stage('Tagging') {
         sh "az acr login -n myakacrregistry --username myakacrregistry --password tlQv=XzxYOf/Ix8+tZj/Uj3lFelycVjG"
-        //sh "sudo docker tag mysampleimage myakacrregistry.azurecr.io/mysampleimage"
+        sh "sudo docker tag mysampleimage myakacrregistry.azurecr.io/mysampleimage:latest"
           }
     }

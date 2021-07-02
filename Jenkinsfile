@@ -1,6 +1,6 @@
 node {
     def mvnHome = tool 'Maven'
-    registryName = "mysampleimage"
+    registryName = "testimage"
     registryUrl = "myakacrregistry.azurecr.io"
     registryCredential= "ACR"
     
